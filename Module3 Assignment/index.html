@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamatic Website & Applications</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Add this to work with the Google APIs Client Library -->
+    <script src="https://apis.google.com/js/api.js"></script>
+
+    <!-- Add this to work with the D3.js third party Library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <h1 id="" class="headingStyle">Module 3 Assignment</h1>
+
+
+    <p>Application 2 : NYTimes API Integration</p>
+
+    <form id="newsForm">
+        <input type="text" id="querySearch2" placeholder="Search for articles..." required>
+        <button type="submit" id="searchButton2">Search</button>
+    </form>
+
+
+    <ul id="newsList"></ul>
+
+
+
+    <p>Application 3 : Youtube API Integration</p>
+
+
+    <form id="youtubeForm">
+        <input type="text" id="querySearch" placeholder="Search for videos" required>
+        <button type="submit" id="searchButton">Search</button>
+
+    </form>
+    <ul id="videoList"></ul>
+
+    <div id="videoContainer"></div>
+
+
+
+    <p>Part 2 : Analog Clock Application</p>
+
+
+    <canvas id="canvas" width="400" height="400" ;></canvas>
+    <div id="d3-container"></div>
+
+
+
+    <script type=" module" src="js/app3.js"></script>
+    <script src="js/app2.js"></script>
+
+
+    <script src="js/canvas.js"></script>
+
+</body>
+
+</html>
