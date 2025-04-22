@@ -15,9 +15,6 @@ function performSearch(query)
         {
             var apiKey = 'AIzaSyB5-Q2bLA6pnkB5bZWAGrwbelM8ocOZmX8'; // YouTube API here
 
-
-
-
             // Call the YouTube search API
             gapi.client.youtube.search.list({
                 key: apiKey,
@@ -60,16 +57,14 @@ function performSearch(query)
 
 
 
+                    // let thumbnail = document.createElement("img");
+                    // thumbnail.src = video.snippet.thumbnails.maxres.url; // Set thumbnail src to maxres image
+                    // thumbnail.alt = video.snippet.title; // Set alt text for accessibility
+                    // thumbnail.style.width = '120px'; // Optional: Set width to make it fit nicely
 
-
-                    //let thumbnail = document.createElement("img");
-                    //thumbnail.src = video.snippet.thumbnails.maxres.url; // Set thumbnail src to maxres image
-                    //thumbnail.alt = video.snippet.title; // Set alt text for accessibility
-                    //thumbnail.style.width = '120px'; // Optional: Set width to make it fit nicely
-
-                    //listItem.textContent = video.snippet.title; // Set text to the video title
-                    //listItem.appendChild(thumbnail);
-                    //videoList.appendChild(listItem); // Append the list item to the video list
+                    // listItem.textContent = video.snippet.title; // Set text to the video title
+                    // listItem.appendChild(thumbnail);
+                    // videoList.appendChild(listItem); // Append the list item to the video list
                 });
             }, function (err)
             {
